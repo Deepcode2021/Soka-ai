@@ -1,53 +1,5 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <style>
-      .video-bg {
-        position: relative;
-        width: 100%;
-        height: 100vh;
-        overflow: hidden;
-      }
-
-      .video-bg video {
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        min-width: 100%;
-        min-height: 100%;
-        transform: translate(-50%, -50%);
-      }
-
-      .video-text {
-        position: absolute;
-        bottom: 10%;
-        left: 50%;
-        transform: translate(-50%, 0);
-        color: white;
-        font-size: 3em;
-        text-align: center;
-        z-index: 1;
-      }
-      @media screen and (max-width: 600px) {
-        .video-text {
-          position: absolute;
-          bottom: 5%;
-          left: 50%;
-          transform: translate(-50%, 0);
-          color: white;
-          font-size: 2em;
-          text-align: center;
-          z-index: 1;
-        }
-      }
-    </style>
-  </head>
-  <body>
-    <div class="video-bg">
-      <video autoplay muted loop>
-        <source src="bg-video.webp" type="video/webp">
-      </video>
-      <div class="video-text">Hii I am Soka</div>
-    </div>
-  </body>
-</html>
+<div id="response"></div>
+<form>
+  <input type="text" id="prompt">
+  <button type="submit" id="submit">Submit</button>
+</form>
